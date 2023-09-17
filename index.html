@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>Site aula</title>
+</head>
+<style>
+/*font-family: 'Anton', sans-serif;
+font-family: 'Bad Script', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Goblin One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Puddles', cursive;*/
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bad+Script&family=Borel&family=Dancing+Script:wght@400;500;600;700&family=Goblin+One&family=Lobster&family=Noto+Sans:wght@500&family=Open+Sans:ital,wght@1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair:ital,wght@0,300;0,900;1,700;1,800;1,900&family=Poppins:ital,wght@0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rubik+Puddles&display=swap');
+  *{
+     box-sizing: border-box;
+     
+  }
+  body{
+     font-family: 'Anton', sans-serif;
+     margin: 0;
+  }
+  .navbar{
+     display: flex;
+     flex-flow: row wrap;
+    /* background: */#18911f;/*apagar*/
+     height: 100px;
+     justify-content: center;
+     align-items: center;
+     position: fixed;
+     width: 100%;
+     background: white;
+  }
+  .logo{
+     margin-left:10%;
+    /* background: white;/*
+     flex: 20%;
+    /* border: 1px solid black;*//*apagar*/
+     text-align: center;
+  }
+  .logo h1{
+     color: #180f4a;
+     font-family: 'Playfair', serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #1617179f;
+  }
+  
+.menu{
+   flex: 60%;
+   /*border: 1px solid black;*//*apagar*/
+   text-align: right;
+   padding: 20px;
+   text-shadow: 2px 2px 4px #1617179f;
+  }
+.menu a{
+   color:##180f4a ;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px 16px;
+}
+.menu a:hover{
+   color: #ff2978;
+   border-bottom: 4px solid #180f4a;
+}
+#botao{
+   color: white;
+   background-image: linear-gradient(to right,  #180f4a, #1b31f3, #ff2978);
+   padding: 10px 25px;
+   border-radius: 5px;
+   border: none;
+   margin-right: 10%;
+   background-size: 600% 200%;
+   animation: botao 1s infinite alternate;
+}
+@keyframes botao {
+   0%{
+      background-position-x: 0%;
+   }
+   100%{
+      background-position-x: 100%;
+   }
+}
+
+.header {
+   background: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+
+.headeline{
+   flex:40%;
+   margin-left: 10%;
+  /* border: 3px solid red;*//*apagar*/
+}
+.headeline p{
+   color: gray;
+   text-align: left;
+}
+.headeline h2{
+ margin: 0; 
+ padding: 0;
+   font-weight: 500;
+   font-size: 15px;
+   color: #180f4a;
+   text-shadow: 2px 2px 4px #1617179f;
+}
+.h2{
+   font-weight: 500;
+   font-size: 15px;
+}
+.img-headeline{
+   text-align: center;
+   flex: 40%;
+   margin-right:10%;
+ /*  border: 3px solid black;*//*apagar*/
+}
+.img{
+   max-width: 100%;
+}
+.contact-btn{
+   text-decoration: none;
+   color: white;
+   background-image: linear-gradient(to right,  #180f4a, #1b31f3, #ff2978);
+   text-transform: uppercase;
+   padding: 15px;
+   border-radius: 5px;
+   background-size: 500% 100%;
+   animation: ficha 1s infinite alternate;
+}
+@keyframes ficha {
+   0%{
+      background-position-x: 0%;
+   }
+   100%{
+      background-position-x: 100%;
+   }
+
+}
+section{
+  
+   display: inline-block;
+   margin-top: 80px;
+  /* border:1px solid black;*/
+   margin-left: 5%;
+   margin-right: 5%;
+   padding: 5%;
+   /*height: 600px;*/
+   text-align: center;
+}
+ section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Playfair', serif;
+    font-weight: bold;
+    color: #180f4a;
+ }  
+ .servico{
+    
+    display: inline-block;
+    margin-top: 5%;
+ }
+ .card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #ff2978;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .card:hover{
+    background: #ff2978 ;
+    color: white;
+    padding: 27px;
+ }
+ .card:hover img{
+    display: none;
+ }
+ .card:hover .card-text{
+    display: none;
+ }
+ .card:hover .texto-oculto{
+    display: block;
+ }
+ .texto-oculto{
+    display: none;
+ }
+  .texto-oculto:hover .dez{
+    display: block;
+ }
+ footer{
+    
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, #180f4a,#090422, black);
+    text-align: center;
+    
+ }
+ .linha{
+    width: 100%;
+    height: 7px;
+    background-image: linear-gradient(to right,  #180f4a, #1b31f3, #ff2978);
+    background-size: 500% 100%;
+    animation: linha 1s infinite alternate;
+ }
+ @keyframes linha {
+   0%{
+      background-position-x: 0%;
+   }
+   100%{
+      background-position-x: 100%;
+   }
+}
+.logo-rodape{
+   width: 100%;
+}
+.agencia{
+   color: white;
+   font-size: 34px;
+   font-family: 'Playfair', serif
+}
+.rodape-final b{
+     font-weight: 100;
+     top:80px;
+  } 
+  .whats{
+     position: fixed;
+     bottom: 5px;
+     right: 5px;
+     width: 90px;
+  }
+
+   
+</style>
+<body>
+<nav class="navbar">
+   <div class="logo">
+   <h1>agencia virtual</h1>
+   </div>
+   <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Contato</a>
+      <a href="#">@Gmail</a>
+      <a id="botao" href="#">Fale Conosco</a>
+   </div>
+</nav>
+<header class="header">
+   <div class="headeline">
+     <h2 class="h2" style="letter-spacing: 13px">Você achou a melhor</h2>
+      <h2 style="font-size:65px">Agência Digital</h2>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."</p>
+      <a class="contact-btn" href="#">Contrate Agora</a> 
+   </div>
+   <div class="img-headeline">
+     <img width="90%" src="img1/foto.png" >
+   </div>
+</header>
+<section>
+    <h2>O que podemos fazer com seu négocio?</h2>
+    <div class="servico">
+       <div class="card">
+     <img  src="img1/pc.png">
+     <div class="card-text">
+   <h3>software web</h3>   
+   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. </p>
+       </div>
+      
+    <div class="texto-oculto">
+  <img class="dez" src="img/pc10.png">
+   <h3>outras coisas</h3>   
+   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.
+       </div>
+       </div>
+       
+       <div class="card">
+       <img src="img1/tele.png">
+       <div class="card-text">   
+       <h3>Android app</h3> 
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. </p>
+       </div>
+       
+       
+       
+      
+       <div class="texto-oculto"> 
+   <img class="dez" src="img/cell.png"> 
+       <h3>Android flout</h3> 
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. </p>
+       </div>
+       </div>
+       
+       <div class="card">
+      
+       <img src="img1/marketing.png">
+  <div class="card-text">
+       <h3>marketing digital</h3> 
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.  </p>
+       </div>
+  <div class="texto-oculto">
+   <img class="dez" src="img/mark.png"> 
+       <h3>conexão digital</h3> 
+       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.  </p>
+       </div>
+       </div>
+    </div>
+</section>
+ <footer>
+<div class="logo-rodape">
+<div class="linha"></div>
+    <h1 class="agencia">Agência digital</h1>
+    <p style="color:white">Um site feito com HTML e CSS puro</p>
+    <div class="rodape-final">
+   <b style="color:white">&#169;    Todos os direitos reservados</b>
+   </div>
+    </div>
+ <img class="whats" src="img1/whats.png">
+ </footer> 
+</body>
+</html>
+
+
+   
+ 
+  
+   
+     
+      
+     
+      
+    
+
+
+
+
+
+  
+
+  
+  
+  
+  
+     
+ 
+   
+ 
